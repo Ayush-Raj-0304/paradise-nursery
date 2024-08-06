@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import ProductListingPage from './components/ProductListingPage';
 import ShoppingCartPage from './components/ShoppingCartPage';
@@ -13,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <Routes>
+    <Routes >
       <Route path="/" element={<LandingPage />} />
       <Route path="/products" element={<ProductListingPage plants={plants} cartItems={cartItems} addToCart={addToCart} />} />
       <Route path="/cart" element={<ShoppingCartPage cartItems={cartItems} setCartItems={setCartItems} />} />
