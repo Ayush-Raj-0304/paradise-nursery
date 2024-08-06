@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import ProductListingPage from './components/ProductListingPage';
+import ShoppingCartPage from './components/ShoppingCartPage';
+import { plants } from './data/plants';
 
-function App() {
+const App = () => {
+  const [cartItems, setCartItems] = React.useState([]);
+
+  const addToCart = (plant) => {
+    setCartItems([...cartItems, { ...plant, quantity: 1 }]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/products" element={<ProductListingPage plants={plants} cartItems={cartItems} addToCart={addToCart} />} />
+      <Route path="/cart" element={<ShoppingCartPage cartItems={cartItems} setCartItems={setCartItems} />} />
+    </Routes>
   );
-}
+};
 
 export default App;

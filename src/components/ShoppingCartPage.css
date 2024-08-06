@@ -1,0 +1,170 @@
+.shopping-cart-page {
+  text-align: center;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.header .logo {
+  text-decoration: none;
+  color: black;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header .tagline {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.header .cart-icon {
+  position: relative;
+}
+
+.main-section {
+  padding: 20px;
+}
+
+.cart-summary {
+  margin-bottom: 20px;
+}
+
+.cart-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cart-summary p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.checkout-button:disabled {
+  background-color: #6c757d;
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cart-item-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.cart-item-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item-details {
+  margin-top: 10px;
+}
+
+.item-details h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.item-details p {
+  font-size: 1rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity-controls button {
+  padding: 5px;
+  font-size: 1rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #218838;
+}
+
+.quantity-controls span {
+  margin: 0 10px;
+}
+
+.item-details button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-details button:hover {
+  background-color: #c82333;
+}
+
+.cart-actions {
+  margin-top: 20px;
+}
+
+.continue-shopping-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.continue-shopping-button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.footer p, .footer a {
+  margin: 0 10px;
+  color: #6c757d;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
